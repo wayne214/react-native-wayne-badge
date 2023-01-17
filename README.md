@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 # react-native-wayne-badge
 跨平台角标
-=======
 
 # react-native-react-native-wayne-badge
 
@@ -46,5 +44,3 @@ import RNReactNativeWayneBadge from 'react-native-react-native-wayne-badge';
 // TODO: What to do with the module?
 RNReactNativeWayneBadge;
 ```
-  
->>>>>>> 9ed245f (first commit)
