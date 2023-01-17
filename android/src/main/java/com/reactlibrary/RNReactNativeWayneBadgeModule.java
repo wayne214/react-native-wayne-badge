@@ -19,4 +19,22 @@ public class RNReactNativeWayneBadgeModule extends ReactContextBaseJavaModule {
   public String getName() {
     return "RNReactNativeWayneBadge";
   }
+
+  @ReactMethod
+  public void applyCount(int badgeCount){
+      if (reactContext != null){
+          if(Build.MANUFACTURER.equalsIgnoreCase("Xiaomi")){
+              XiaoMiBadge.getInstance().applyCount(reactContext, badgeCount);
+          }else {
+              ShortcutBadger.applyCount(reactContext, badgeCount);
+          }
+      }
+  }
+
+  @ReactMethod
+  public void removeCount(){
+      if (reactContext != null){
+          ShortcutBadger.removeCount(reactContext);
+      }
+  }
 }
