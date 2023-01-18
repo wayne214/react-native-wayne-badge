@@ -8,7 +8,7 @@ import android.content.Context;
 import android.os.Build;
 
 import com.facebook.react.bridge.ReactApplicationContext;
-import com.rnproject.R;
+import com.reactlibrary.R;
 
 import me.leolin.shortcutbadger.ShortcutBadger;
 
