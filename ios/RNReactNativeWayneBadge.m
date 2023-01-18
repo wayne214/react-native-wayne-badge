@@ -11,7 +11,7 @@
 {
     return dispatch_get_main_queue();
 }
-RCT_EXPORT_MODULE();
+RCT_EXPORT_MODULE(RNWayneBadge);
 RCT_EXPORT_METHOD(applyCount:(NSDictionary *)params)
 {
     if(params[BADGE]){
