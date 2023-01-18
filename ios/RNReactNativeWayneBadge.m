@@ -5,7 +5,7 @@
 //本地角标
 #define APP_BADGE @"appBadge"
 
-@interface RNReactNativeWayneBadge ()
+@interface RNReactNativeWayneBadge()
 
 @end
 
@@ -15,7 +15,7 @@
 {
     return dispatch_get_main_queue();
 }
-RCT_EXPORT_MODULE(RNWayneBadge);
+RCT_EXPORT_MODULE();
 RCT_EXPORT_METHOD(setBadge:(NSDictionary *)params)
 {
     if (params[APP_BADGE]) {
