@@ -1,17 +1,24 @@
 
 {
-  "name": "react-native-react-native-wayne-badge",
+  "name": "react-native-wayne-badge",
   "version": "1.0.0",
-  "description": "",
+  "description": "跨平台设置应用角标",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wayne214/react-native-cardview-wayne"
+  },
   "keywords": [
     "react-native"
   ],
-  "author": "",
-  "license": "",
+  "author": {
+    "name": "wayne214",
+    "email": "wayne214@163.com"
+  },
+  "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.41.2"
   }
