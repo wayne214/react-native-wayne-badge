@@ -1,6 +1,6 @@
 
 import { NativeModules } from 'react-native';
 
-const { RNReactNativeWayneBadge } = NativeModules;
+const { RNWayneBadge } = NativeModules;
 
-export default RNReactNativeWayneBadge;
+export default RNWayneBadge;

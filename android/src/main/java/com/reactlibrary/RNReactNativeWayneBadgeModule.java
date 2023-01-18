@@ -6,6 +6,9 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Callback;
 
+import android.os.Build;
+import me.leolin.shortcutbadger.ShortcutBadger;
+
 public class RNReactNativeWayneBadgeModule extends ReactContextBaseJavaModule {
 
   private final ReactApplicationContext reactContext;
@@ -17,7 +20,7 @@ public class RNReactNativeWayneBadgeModule extends ReactContextBaseJavaModule {
 
   @Override
   public String getName() {
-    return "RNReactNativeWayneBadge";
+    return "RNWayneBadge";
   }
 
   @ReactMethod
