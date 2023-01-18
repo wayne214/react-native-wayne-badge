@@ -12,7 +12,7 @@
     return dispatch_get_main_queue();
 }
 RCT_EXPORT_MODULE(RNWayneBadge);
-RCT_EXPORT_METHOD(applyCount:(NSDictionary *)params)
+RCT_EXPORT_METHOD(setBadge:(NSDictionary *)params)
 {
     if (params[APP_BADGE]) {
         NSNumber *number = params[APP_BADGE];
