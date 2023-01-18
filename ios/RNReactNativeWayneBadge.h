@@ -5,6 +5,6 @@
 #import <React/RCTBridgeModule.h>
 #endif
 
-@interface RNWayneBadge : NSObject <RCTBridgeModule>
+@interface RNReactNativeWayneBadge : NSObject <RCTBridgeModule>
 
 @end
