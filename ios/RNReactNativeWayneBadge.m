@@ -5,6 +5,10 @@
 //本地角标
 #define APP_BADGE @"appBadge"
 
+@interface RNReactNativeWayneBadge ()
+
+@end
+
 @implementation RNReactNativeWayneBadge
 
 - (dispatch_queue_t)methodQueue
