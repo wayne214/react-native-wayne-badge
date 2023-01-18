@@ -14,11 +14,6 @@
 RCT_EXPORT_MODULE(RNWayneBadge);
 RCT_EXPORT_METHOD(applyCount:(NSDictionary *)params)
 {
-    if(params[BADGE]){
-        NSNumber *number = params[BADGE];
-        if(number < 0) return;
-        [JPUSHService setBadge:[number integerValue]];
-    }
     if (params[APP_BADGE]) {
         NSNumber *number = params[APP_BADGE];
         if(number < 0) return;
