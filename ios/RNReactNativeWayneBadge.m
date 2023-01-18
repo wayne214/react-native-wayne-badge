@@ -11,9 +11,7 @@
 {
     return dispatch_get_main_queue();
 }
-// RCT_EXPORT_MODULE()；
-
-//badge 角标
+RCT_EXPORT_MODULE();
 RCT_EXPORT_METHOD(applyCount:(NSDictionary *)params)
 {
     if(params[BADGE]){
