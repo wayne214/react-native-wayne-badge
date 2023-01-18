@@ -1,5 +1,5 @@
 # react-native-wayne-badge
-跨平台设置Androi和iOS平台应用角标
+跨平台设置Android和iOS平台应用角标
 
 ## Getting started
 
@@ -10,8 +10,9 @@ or
 
 ## Usage
 ```javascript
-import RNReactNativeWayneBadge from 'react-native-wayne-badge';
+// 导入包
+import RNWayneBadge from 'react-native-wayne-badge';
 
-// TODO: What to do with the module?
-RNReactNativeWayneBadge.applyCount(10);
+// 使用包
+RNWayneBadge.applyCount(1);
 ```
