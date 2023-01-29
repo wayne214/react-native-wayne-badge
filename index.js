@@ -3,4 +3,4 @@ import { NativeModules } from 'react-native';
 
 const { RNWayneBadge } = NativeModules;
 
-export default NativeModules.RNWayneBadge;
+export default NativeModules.RNReactNativeWayneBadge;

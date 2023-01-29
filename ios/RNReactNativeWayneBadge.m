@@ -1,21 +1,13 @@
-
+#import <Foundation/Foundation.h>
 #import "RNReactNativeWayneBadge.h"
 
-#define BADGE      @"badge"
 //本地角标
 #define APP_BADGE @"appBadge"
 
-@interface RNReactNativeWayneBadge()
-
-@end
-
 @implementation RNReactNativeWayneBadge
 
-- (dispatch_queue_t)methodQueue
-{
-    return dispatch_get_main_queue();
-}
 RCT_EXPORT_MODULE();
+
 RCT_EXPORT_METHOD(setBadge:(NSDictionary *)params)
 {
     if (params[APP_BADGE]) {
