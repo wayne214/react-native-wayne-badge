@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "RNReactNativeWayneBadge"
-  s.version      = "1.0.0"
+  s.version      = "1.0.23"
   s.summary      = "RNReactNativeWayneBadge"
   s.description  = <<-DESC
                   RNReactNativeWayneBadge
