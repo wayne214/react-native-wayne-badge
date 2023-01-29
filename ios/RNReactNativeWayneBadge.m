@@ -6,17 +6,20 @@
 
 @implementation RNReactNativeWayneBadge
 
+- (dispatch_queue_t)methodQueue
+{
+    return dispatch_get_main_queue();
+}
+
 RCT_EXPORT_MODULE(RNWayneBadge);
 
-RCT_EXPORT_METHOD(setBadge:(NSDictionary *)params)
+RCT_EXPORT_METHOD(setBadge:(NSInteger *)number)
 {
-    if (params[APP_BADGE]) {
-        NSNumber *number = params[APP_BADGE];
         if(number < 0) return;
         dispatch_async(dispatch_get_main_queue(), ^{
-            [UIApplication sharedApplication].applicationIconBadgeNumber = [number integerValue];
+            [[UIApplication sharedApplication] setApplicationIconBadgeNumber:(NSInteger)number];
         });
-    }
+
 }
 
 @end
