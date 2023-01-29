@@ -13,6 +13,10 @@
 
 RCT_EXPORT_MODULE(RNWayneBadge);
 
+RCT_EXPORT_METHOD(start) {
+    //  do nothing (兼容安卓的 start 方法)
+}
+
 RCT_EXPORT_METHOD(setBadge:(NSInteger *)number)
 {
         if(number < 0) return;
