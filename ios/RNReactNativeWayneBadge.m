@@ -6,7 +6,7 @@
 
 @implementation RNReactNativeWayneBadge
 
-RCT_EXPORT_MODULE();
+RCT_EXPORT_MODULE(RNWayneBadge);
 
 RCT_EXPORT_METHOD(setBadge:(NSDictionary *)params)
 {
