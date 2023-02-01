@@ -59,7 +59,7 @@ public class XiaoMiBadge {
     private void setupNotificationChannel() {
         NotificationChannel channel = new NotificationChannel(NOTIFICATION_CHANNEL, "ShortcutBadger Sample",
                 NotificationManager.IMPORTANCE_DEFAULT);
-
+        channel.setShowBadge(true);
         mNotificationManager.createNotificationChannel(channel);
     }
 }
