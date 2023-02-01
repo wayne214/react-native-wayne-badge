@@ -42,7 +42,8 @@ public class XiaoMiBadge {
         Notification.Builder builder = new Notification.Builder(reactContext)
                 .setContentTitle("")
                 .setContentText("")
-                .setSmallIcon(R.drawable.ic_launcher);
+                .setSmallIcon(R.drawable.ic_launcher)
+                .setNumber(int badgeCount);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             setupNotificationChannel();
