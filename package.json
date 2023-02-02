@@ -1,6 +1,6 @@
 {
   "name": "react-native-wayne-badge",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "description": "跨平台设置应用角标",
   "main": "index.js",
   "scripts": {
