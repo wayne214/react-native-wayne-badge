@@ -3,6 +3,7 @@ import android.app.NotificationManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.content.Intent;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 
