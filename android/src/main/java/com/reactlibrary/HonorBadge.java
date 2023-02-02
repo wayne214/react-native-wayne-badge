@@ -24,6 +24,7 @@ public class HonorBadge {
     }
 
     public void applyCount(ReactApplicationContext reactContext, int num) {
+        Intent launchIntent = reactContext.getPackageManager().getLaunchIntentForPackage(reactContext.getPackageName());
         String URI_OLD = "content://com.huawei.android.launcher.settings/badge/";
         String URI_NEW = "content://com.hihonor.android.launcher.settings/badge/";
         Uri uri = Uri.parse(URI_NEW);
@@ -37,8 +38,8 @@ public class HonorBadge {
         }
         try {
             Bundle extra = new Bundle();
-            extra.putString("package", "com.rnproject");
-            extra.putString("class", "com.rnproject.MainActivity");
+            extra.putString("package", reactContext.getPackageName());
+            extra.putString("class", launchIntent.getComponent().getClassName());
             extra.putInt("badgenumber", num);
             if (uri != null) {
                 reactContext.getContentResolver().call(uri, "change_badge", null, extra);
