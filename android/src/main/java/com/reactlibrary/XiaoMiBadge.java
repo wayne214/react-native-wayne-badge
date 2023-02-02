@@ -40,8 +40,8 @@ public class XiaoMiBadge {
         notificationId++;
 
         Notification.Builder builder = new Notification.Builder(reactContext)
-                .setContentTitle("")
-                .setContentText("")
+                .setContentTitle("应用角标")
+                .setContentText("您有" + count + "条未读消息")
                 .setSmallIcon(R.drawable.ic_launcher)
                 .setNumber(int badgeCount);
 
