@@ -43,7 +43,7 @@ public class XiaoMiBadge {
                 .setContentTitle("应用角标")
                 .setContentText("您有" + count + "条未读消息")
                 .setSmallIcon(R.drawable.ic_launcher)
-                .setNumber(int badgeCount);
+                .setNumber(badgeCount);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             setupNotificationChannel();
